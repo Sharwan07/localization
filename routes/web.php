@@ -6,7 +6,11 @@ use Illuminate\Support\Facades\Session;
 
 Route::middleware('checklang')->group(function($lang){
     Route::get('/',function(){
-        return view('welcome');
+        return view('home');
+    });
+
+    Route::fallback(function () {
+        return 'Page Not Found!';
     });
 
     Route::get('/setland/{lang}', function($lang)
@@ -17,16 +21,16 @@ Route::middleware('checklang')->group(function($lang){
     });
 
     Route::get('home', function(){
-        return 'This is home Page';
+        return view('home');
     });
     Route::get('about', function(){
-        return 'This is about Page';
+        return view('about');
     });
     Route::get('service', function(){
-        return 'This is service Page';
+        return view('service');
     });
     Route::get('contact', function(){
-        return 'This is contact Page';
+        return view('contact');
     });
 
 });

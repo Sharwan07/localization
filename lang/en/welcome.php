@@ -1,4 +1,4 @@
-<?php 
+<?php
 
     return [
         "heading1"=> "Hello How Are You",
@@ -6,7 +6,7 @@
         "Home" => "Home",
         "AboutUs" => "About Us",
         "Service" => "Service",
-        "Contactus" => "Contact Us",
+        "ContactUs" => "Contact Us",
 
         "intro" => "Hii everyone this is :name How are you."
     ];
